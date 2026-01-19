@@ -6,8 +6,8 @@ RAG, Langchain 이용 KERI 기술문서 QnA AI 에이전트 소스 코드
 ## 준비 (Windows)
 
 1. 아래 명령어로 `Git`을 설치 후 LFS을 활성화합니다.
-   `winget install --id Git.Git -e --source winget
-   git lfs install`
+   `winget install --id Git.Git -e --source winget`
+   `git lfs install`
 
 2. 아래 명령어로 텍스트 임베딩 모델을 다운받아 스크립트와 동일한 디렉토리에 저장합니다.
    `git clone https://huggingface.co/BAAI/bge-m3`
