@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
@@ -7,11 +8,14 @@ from langchain_classic.chains import RetrievalQA
 from langchain_core.prompts import PromptTemplate
 
 # --- 설정 ---
-GEMINI_API_KEY = "AIzaSyC-_snQm3Q2DWzTEwDNxLyr3uqdfmutSrQ"
+load_dotenv()
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 MODEL_PATH = './bge-m3'
 DB_PATH = 'vectorstore/db_faiss'
 
 os.environ["GOOGLE_API_KEY"] = GEMINI_API_KEY
+if not GEMINI_API_KEY:
+    raise ValueError("GEMINI_API_KEY가 .env 파일에 정의되어 있지 않습니다.")
 
 def get_agent():
     # 1. 임베딩 모델 로딩

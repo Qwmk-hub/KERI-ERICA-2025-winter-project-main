@@ -1,0 +1,49 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# 환경설정
+.env
+.env.*
+
+# 데이터/모델/출력
+*.db
+*.sqlite3
+*.h5
+*.hdf5
+*.ckpt
+*.pth
+*.pt
+*.pkl
+*.joblib
+*.csv
+*.tsv
+*.log
+*.out
+*.tmp
+*.bak
+*.npy
+*.npz
+*.sav
+*.rpt
+*.tfevents.*
+
+# 기타
+.DS_Store
+Thumbs.db
+
+# FAISS 벡터스토어
+vectorstore/
