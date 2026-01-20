@@ -10,7 +10,7 @@ RAG, Langchain 이용 KERI 기술문서 QnA AI 에이전트 소스 코드
    `git lfs install`
 
 2. 아래 명령어로 텍스트 임베딩 모델을 다운받아 스크립트와 동일한 디렉토리에 저장합니다.
-   `git clone https://huggingface.co/BAAI/bge-m3`
+   `git clone --depth 1 https://huggingface.co/BAAI/bge-m3`
 
 3. 요구 패키지들을 설치합니다.
    `pip install -r requirements.txt`
