@@ -47,3 +47,6 @@ Thumbs.db
 
 # FAISS 벡터스토어
 vectorstore/
+
+# 인코딩 모델 (bge-m3)
+bge-m3/
