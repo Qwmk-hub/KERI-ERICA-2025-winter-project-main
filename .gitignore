@@ -19,6 +19,9 @@ build/
 .env
 .env.*
 
+# PDF 문서자료
+*.pdf
+
 # 데이터/모델/출력
 *.db
 *.sqlite3
